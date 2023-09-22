@@ -1,0 +1,578 @@
+@import url('./fonts.css');
+
+input,
+input:active,
+input:focus,
+input:target,
+input:visited {
+    border: 0 !important;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+*:not(i) {
+    font-family: 'Montserrat';
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+/* header and navigation */
+.header-top,
+.search-container,
+.page-icons,
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-top {
+    width: 86%;
+    justify-content: space-between;
+    padding: 2rem 7%;
+    align-items: center;
+}
+
+.logo-container {
+    width: 25%;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.search-container {
+    border: 1.5px solid #30356c ;
+    padding: 5px 10px;
+    border-radius: 12px;
+    width: 30%;
+    margin-right: auto;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.search-container input {
+   padding: 10px;
+}
+
+.search-icon {
+    width: 2rem;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.page-icon {
+    margin-right: 10px;
+    width: 1.8rem;
+    font-size: 1.5rem;
+}
+
+.button-action {
+    padding: 6px 20px;
+    border-radius: 12px;
+    outline: none;
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+.button-action.blue {
+    background-color: #30356c;
+    color: white;
+}
+
+.button-action.white {
+    background: none;
+    border: 1px solid #30356c;
+    color: #30356c;
+}
+
+.list {
+    display: none;
+    align-items: center;
+    width: 10%;
+}
+
+.list i {
+    font-size: 2.5rem;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    padding: 0 7%;
+    background-color: #30356c;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid white;
+    width: calc((86% - 180px) / 6);
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.navbar a:first-of-type {
+    border-left: 1px solid white;
+}
+
+.dropdown-icon {
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.icon {
+    font-weight: 00;
+}
+
+/* body and content */
+
+/* seller-details */
+.content {
+    padding: 3% 10%;
+}
+
+.content > header {
+    border-bottom: 2px solid rgb(200, 200, 200);
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.seller-details {
+    width: 40%;
+}
+
+.offer-code-input {
+    display: flex;
+    border: 1px solid rgb(181, 180, 180);
+}
+
+.offer-code-input input {
+    padding: 10px;
+    width: 90%;
+    padding: 0 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: #1caeed;
+}
+
+.square-btn {
+    min-height: 100%;
+    border-radius: 0;
+    border: 0;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #30356c;
+    color: white;
+}
+
+.seller-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.seller-logo img {
+    width: 100%;
+}
+
+.seller-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 20px;
+    padding: 20px 25px;
+    border: 1px solid rgb(181, 180, 180);
+}
+
+.seller-text-pg {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(181, 180, 180);
+}
+
+/* seller items */
+.seller-items {
+    width: 70%;
+    padding: 20px 0px;
+    margin-left: 30px;
+}
+
+.discount {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #64a9c7;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.discount h2 {
+    margin: 0;
+}
+
+.vouchers {
+    padding: 20px 0;
+}
+
+.voucher {
+    display: flex;
+    padding: 25px;
+    border: 1px solid rgb(181, 180, 180);
+}
+
+.voucher-details {
+    width: 68%;
+    margin-right: 10px;
+    display: grid;
+    grid-template: auto auto / auto auto;
+}
+
+.voucher-det.code {
+    font-weight: 700;
+    color: #30356c;
+}
+
+.voucher-det.new-amount {
+    font-weight: 700;
+    color: #1caeed;
+    font-size: 1.1rem;
+}
+
+.voucher-det.prev-amount {
+    text-decoration: line-through;
+}
+
+.voucher-det.right {
+    text-align: right;
+}
+
+.get-deal-btn {
+    padding: 15px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: auto;
+}
+
+/* Why Choose Great WorkPerks */
+.why-choose {
+    text-align: center;
+    padding: 0 20% 50px 20%;
+}
+
+/* footer */
+footer {
+    font-size: 0.85rem;
+}
+
+.footer-content {
+    display: flex;
+    padding: 30px 7%;
+    background-color: #e8e8e8;
+    width: 100%;
+}
+
+.footer-content > div {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-content > div:nth-of-type(2) {
+    flex-grow: 1.3;
+    padding: 0 20px;
+}
+
+
+.footer-content > div h4 {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.footer-content .logo-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.site-tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.site-tabs .tab {
+    width: 50%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.site-tabs a:target,
+.site-tabs a:focus  {
+    color: black;
+}
+
+.payments .site-tabs {
+    flex-direction: column;
+}
+
+.cards {
+    margin-bottom: 30px;
+}
+
+.cards img {
+    margin-right: 10px;
+}
+
+.terms-of-use {
+    display: flex;
+    padding: 10px 8%;
+    align-items: center;
+    font-size: 0.77rem;
+}
+
+.terms-of-use > div {
+    flex: 1;
+}
+
+.terms-of-use-links a,
+.terms-of-use-links a:target {
+    color: black;
+    text-decoration: none;
+}
+
+.terms-of-use-links a:not(:last-of-type) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid black;
+}
+
+.terms-of-use p {
+    margin: 0;
+}
+
+.all-rights {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-links {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    color: grey;
+}
+
+.social-media-links a,
+.social-media-links a:target {
+    margin-right: 5px;
+    color: grey;
+}
+
+/* Phone Devices CSS */
+@media only screen and (max-width: 600px) {
+    /* Navigation */
+    .header-top {
+        flex-wrap: wrap;
+        padding: 1rem 5%;
+        width: 90%;
+    }
+
+    .logo-container {
+        width: 80%;
+    }
+
+    .header-links {
+        display: none;
+    }
+
+    .list {
+        display: flex;
+        order: 4;
+        padding-top: 10px;
+    }
+
+    .page-icon {
+        margin-right: 0;
+    }
+
+    .page-icon.house {
+        display: none;
+    }
+
+    .header-buttons {
+        order: 2;
+    }
+
+    .search-container {
+        order: 3;
+        width: 80%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .navbar {
+        overflow: auto;
+        padding: 10px;
+        background-color: rgb(220, 220, 220);
+    }
+
+    .navbar a {
+        border-radius: 10px;
+        flex: 1;
+        margin: 0 5px;
+        background-color: #30356c;
+        min-width: fit-content;
+        text-align: center;
+        padding: 10px 15px;
+        border: 0;
+        justify-content: center;
+    }
+
+    .navbar a:first-of-type {
+        border: 0;
+    }
+
+    .navbar a .icon {
+        display: none;
+    }
+
+    /* Seller Content  */
+    section {
+        margin: 0 20px;
+    }
+
+    .content {
+        padding: 3% 5%;
+        width: calc(95% - 40px);
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .seller-items {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .discount {
+        font-size: 1rem;
+    }
+
+    .seller-details {
+        width: 100%;
+        order: 2;
+    }
+
+    .seller-info {
+        border: 0;
+        padding: 0;
+    }
+
+    .voucher {
+        flex-direction: column;
+    }
+
+    .voucher .voucher-details {
+        width: 100%;
+    }
+
+    .get-deal-btn {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: 0;
+        font-size: 0.9rem;
+        padding: 7px 0;
+    }
+
+    /* Why Choose Section */
+    .why-choose {
+        padding: 20px 5%;
+        border-top: 1px solid rgb(181, 180, 180);
+        width: 83%;
+    }
+
+    /* Footer */
+    .footer-content, .terms-of-use {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        padding: 20px 10px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-content > div {
+        margin-bottom: 20px;
+    }
+
+    .footer-content .logo-container {
+        width: 80%;
+    }
+
+    .greatwork-perks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .site-tabs-cont {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .site-tab-header {
+        text-align: left;
+    }
+
+    .site-tabs {
+        flex-direction: column;
+    }
+
+    .site-tabs .tab {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgb(181, 180, 180);
+    }
+
+    .terms-of-use {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .terms-of-use > div {
+        margin-bottom: 15px;
+    }
+}
